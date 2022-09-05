@@ -33,7 +33,7 @@
 # theme: minima
 
 # plugins:
-  - jekyll-feed
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -56,3 +56,4 @@
 #   - vendor/ruby/
 theme: jekyll-theme-leap-day
 title: Annotation Counts: Unveiling Missing and Spurious Calls for Analyzing Spring Web Applications
+markdown: GFM
