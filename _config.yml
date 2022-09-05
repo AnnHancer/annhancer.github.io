@@ -1,2 +1,3 @@
-theme: "jekyll-theme-leap-day"
-title: "Annotation Counts: Unveiling Missing and Spurious Calls for\nAnalyzing Spring Web Applications"
+theme: jekyll-theme-leap-day
+title: Annotation Counts 
+description: Unveiling Missing and Spurious Calls for Analyzing Spring Web Applications
