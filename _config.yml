@@ -1,6 +1,2 @@
-# baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://annhancer.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-
-# markdown: kramdown
 theme: jekyll-theme-leap-day
-title: "Annotation Counts: Unveiling Missing and Spurious Calls for Analyzing Spring Web Applications"
+title: "Annotation Counts: Unveiling Missing and Spurious Calls for\nAnalyzing Spring Web Applications"
