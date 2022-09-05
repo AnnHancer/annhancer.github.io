@@ -1,4 +1,4 @@
-<!-- ### Ann Hancer -->
+## Ann Hancer
 
 Web applications serve billions of clients across various business domains. Spring has dominated web applications with developer-friendly programming features to ease web development, which creates an eager need of static analysis to detect bugs and vulnerabilities in Spring web applications. Call graph generation is the foundation of inter-procedural static analysis. However, to the best of our knowledge, no previous call graph generation approach supports the feature of annotations which are commonly used in Spring web applications. Fortunately, Spring annotations contain valuable semantics that can help enhance call graph generation.
 
