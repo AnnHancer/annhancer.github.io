@@ -6,7 +6,6 @@ layout: home
 title: AnnHancer
 ---
 
-
 ## Ann Hancer
 
 ## Annotation Counts: Unveiling Missing and Spurious Calls for Analyzing Spring Web Applications
