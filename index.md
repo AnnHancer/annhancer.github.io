@@ -8,11 +8,11 @@ The paper has been submitted to ICSE 2023.
 
 ## Annotation
 
-* list of [Spring guides]().
+* list of [Spring guides](spring-guide.txt).
 
-* list of analyzed [jar files]().
+* list of analyzed [jar files](jars.txt).
 
-* list of [104 annotations]().
+* list of [104 annotations](annotations.txt).
 
 * list of 74 annotations.
 
@@ -159,7 +159,7 @@ public abstract class SpringBootCondition implements Condition {
 
 #### Validation
 
-**Jar:** hibernate-validator, Note that 
+**Jar:** org.hibernate.validator:hibernate-validator:6.2.3.Final
 
 **Method:**
 
@@ -167,8 +167,18 @@ public abstract class SpringBootCondition implements Condition {
 package org.hibernate.validator.internal.engine.constraintvalidation;
 
 public abstract class ConstraintTree<A extends Annotation> {
-    protected final <V> Optional<ConstraintValidatorContextImpl> validateSingleConstraint(ValueContext<?, ?> valueContext, ConstraintValidatorContextImpl constraintValidatorContext, ConstraintValidator<A, V> validator) {
-        ...
+       protected final <V> Optional<ConstraintValidatorContextImpl> validateSingleConstraint(ValueContext<?, ?> valueContext, ConstraintValidatorContextImpl constraintValidatorContext, ConstraintValidator<A, V> validator) {
+        boolean isValid;
+        try {
+            V validatedValue = valueContext.getCurrentValidatedValue();
+            isValid = validator.isValid(validatedValue, constraintValidatorContext);
+        } catch (RuntimeException var6) {
+            if (var6 instanceof ConstraintDeclarationException) {
+                throw var6;
+            }
+            throw LOG.getExceptionDuringIsValidCallException(var6);
+        }
+        return !isValid ? Optional.of(constraintValidatorContext) : Optional.empty();
     }
 }
 ```
