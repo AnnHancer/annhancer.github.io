@@ -12,7 +12,7 @@ The paper has been submitted to ICSE 2023.
 
 * list of analyzed [jar files](jars.txt).
 
-* list of [104 annotations](annotations.json).
+* list of [104 annotations](annotation.json).
 
 * list of 74 annotations.
 
