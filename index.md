@@ -10,7 +10,7 @@ The paper has been submitted to ICSE 2023.
 
 * list of [Spring guides](spring-guide.txt).
 
-* list of analyzed [jar files](jars.txt).
+<!-- * list of analyzed [jar files](jars.txt). -->
 
 * list of [104 annotations](annotation.json).
 
