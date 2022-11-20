@@ -191,6 +191,14 @@ The source of ANNHANCER could be retrieved [here](AnnHancer.tar). It starts from
 
 
 
+## Evaluation Result
+
+
+* RQ1 [Annotation prevalence](prevalence.zip)
+* RQ2 [Effectiveness evaluation](effectiveness.zip)
+* RQ3 [Accuracy evaluation](accuracy.zip)
+* RQ4 [Performance](performance.zip)
+
 
 
 
